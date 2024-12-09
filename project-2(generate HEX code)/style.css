@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="text"]:disabled {
+  background-color: #15d925;
+  color: #0e0101;
+  border: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  margin: 20px;
+}
+
+#main button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: blue;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
