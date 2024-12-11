@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="text"]:disabled,
+.copy-btn {
+  background-color: #fff;
+  color: #000;
+  border: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+#main #change-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: blue;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.copy-btn {
+  cursor: pointer;
+}
+
+.toast-message {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 160px;
+  height: 60px;
+  background-color: green;
+  color: #000;
+  text-align: center;
+  padding: 20px;
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 gray;
+  z-index: 999;
+}
+
+.toast-message-slide-in {
+  animation: toast-animation-in 0.5s ease-in;
+}
+
+.toast-message-slide-out {
+  animation: toast-animation-out 0.5s ease-in;
+}
+
+@keyframes toast-animation-in {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes toast-animation-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
